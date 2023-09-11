@@ -1,8 +1,10 @@
 class EquilateralTriangle(_equilateralTriangle : String, _side : Int) : Dimensionable {
     var name = _equilateralTriangle
-    var side = 0
+    var side = _side
 
     fun setDimensions ( ) {
+
+        
 
     }
     fun getArea(): Double {
