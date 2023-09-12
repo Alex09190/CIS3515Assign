@@ -1,4 +1,4 @@
-class Square (_square : String, _length : Int, _height : Int) : Dimensionable {
+class Square(_square: String, _length: Double, _height: Double) : Dimensionable {
     var name = _square
     var lenght = _length
     var height = _height
@@ -7,7 +7,8 @@ class Square (_square : String, _length : Int, _height : Int) : Dimensionable {
     }
     fun getArea() : Double{
 
+        val temp = lenght * height
 
-        return 0.0
+        return temp
     }
 }

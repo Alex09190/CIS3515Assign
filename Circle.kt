@@ -1,4 +1,4 @@
-class Circle (_circle: String, _radius: Int) :  Dimensionable {
+class Circle (_circle: String, _radius: Double) :  Dimensionable {
     var name = _circle
     var radius = _radius
 
@@ -6,7 +6,10 @@ class Circle (_circle: String, _radius: Int) :  Dimensionable {
     fun setDimensions ( ) {
 
     }
-    fun getArea() : Double{
-        return 0.0
+    fun getArea(radius: Double): Double {
+
+        val temp = radius
+
+        return (temp * temp * 3.14)
     }
 }

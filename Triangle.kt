@@ -1,4 +1,4 @@
-class Triangle (_triangle : String, _side1 : Int,  _side2 : Int, _side3: Int) : Dimensionable {
+class Triangle(_triangle: String, _side1: Double, _side2: Double, _side3: Double) : Dimensionable {
     var name = _triangle
     var side1 = _side1
     var side2 = _side2
@@ -8,7 +8,14 @@ class Triangle (_triangle : String, _side1 : Int,  _side2 : Int, _side3: Int) : 
 
     }
     fun getArea() : Double{
-        return 0.0
+
+        val s = 0.5 * side1 * side2 * side3
+        var area = 0.0
+
+        area = sqrt (( s - side1 ) * ( s - side2 ) * ( s - side3))
+
+
+        return area
     }
 
 }
